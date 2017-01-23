@@ -50,7 +50,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.locationType = 'hash';
+    ENV.rootURL = '/select-spark/';
   }
 
   return ENV;

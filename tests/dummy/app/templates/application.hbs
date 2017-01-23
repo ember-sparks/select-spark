@@ -1,0 +1,12 @@
+{{#spark-page
+  config=config
+}}
+
+  {{select-spark
+    selected=demo.selected
+    options=options
+    disabled=demo.disabled
+    onChange=(action (mut demo.selected))
+  }}
+
+{{/spark-page}}

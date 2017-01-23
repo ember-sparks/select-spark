@@ -1,0 +1,28 @@
+{{#if hasBlock}}
+  <span local-class={{spark "icon"}}>
+    {{yield}}
+  </span>
+{{/if}}
+
+<select
+  local-class="
+    {{spark 'select'}}
+    {{if hasBlock (spark 'has-icon')}}
+  "
+  disabled="{{if disabled 'true'}}"
+  onchange={{action "onChange"}}
+>
+
+  {{#each _selectOptions as |option|}}
+
+    {{select-spark/select-option
+      value=option.value
+      label=option.label
+      selectedValue=selected
+    }}
+
+  {{/each}}
+
+</select>
+
+<span local-class={{spark "arrow"}}></span>

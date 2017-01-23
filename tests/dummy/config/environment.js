@@ -17,6 +17,13 @@ module.exports = function(environment) {
       }
     },
 
+    sparks: {
+      demo: {
+        selected: "se",
+        disabled: false,
+      }
+    },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created

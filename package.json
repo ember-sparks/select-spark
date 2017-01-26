@@ -1,9 +1,11 @@
 {
   "name": "ember-select-spark",
-  "version": "0.0.0",
-  "description": "A simple way to use and style <select>",
+  "version": "0.1.0",
+  "description": "A simple way to use and style <select> with Ember Sparks.",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "ember-sparks",
+    "select"
   ],
   "license": "MIT",
   "author": "Tristan Edwards <tristan.edwards@me.com> (http://tristanedwards.me)",
@@ -11,7 +13,10 @@
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": {
+    "url": "https://github.com/ember-sparks/select-spark.git",
+    "type": "git"
+  },
   "scripts": {
     "build": "ember build",
     "start": "ember server",
@@ -24,7 +29,7 @@
     "ember-css-modules": "0.6.4",
     "postcss-nesting": "2.3.1",
     "autoprefixer": "6.7.0",
-    "ember-sparks": "*"
+    "ember-sparks": "0.1.0"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
@@ -48,7 +53,7 @@
     "ember-export-application-global": "^1.0.5",
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",
-    "ember-sparks-web": "*",
+    "ember-sparks-web": "0.1.0",
     "loader.js": "^4.0.10",
     "markdown-it": "8.2.2"
   },
@@ -56,6 +61,7 @@
     "node": ">= 0.12.0"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "demoURL": "http://ember-sparks.com/select-spark/"
   }
 }

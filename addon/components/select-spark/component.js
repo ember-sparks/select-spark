@@ -14,6 +14,10 @@ export default SparkComponent.extend({
 
   _selectOptions: computed('options', function() {
     let options = this.get('options');
+    
+    if (!options) {
+      return;
+    }
 
     let isHashArr = (typeof options[0] === "object");
 

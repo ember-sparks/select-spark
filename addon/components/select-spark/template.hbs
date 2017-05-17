@@ -13,6 +13,12 @@
   onchange={{action "onChange"}}
 >
 
+  {{#if title}}
+    <option disabled>
+      {{title}}
+    </option>
+  {{/if}}
+
   {{#each _selectOptions as |option|}}
 
     {{select-spark/select-option

@@ -19,6 +19,7 @@ module.exports = function(environment) {
 
     sparks: {
       demo: {
+        title: "Pick a country:",
         selected: "se",
         disabled: false,
       }

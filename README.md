@@ -25,6 +25,7 @@ Now restart your Ember app and drop the component in there!
 | `options`   | `array`         | `null`  | A list of options that the user can select. The array can either contain just strings, or objects with the keys `value` and `label` (recommended). |
 | `selected`  | `string`        | `null`  | The default selected option. Must match one of your options' `value`. |
 | `disabled`  | `boolean`       | `false` | Determine whether the user can interact with the select box or not. |
+| `title`     | `string`        | `null`  | An optional "title" for the select box, which is simply a disabled `<option>`. |
 
 
 ## Actions

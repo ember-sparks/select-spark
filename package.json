@@ -1,6 +1,6 @@
 {
   "name": "ember-select-spark",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple way to use and style <select> with Ember Sparks.",
   "keywords": [
     "ember-addon",
